@@ -1,0 +1,712 @@
+*{
+    box-sizing: border-box;
+}
+body{
+    background-color: black;
+    margin: 0px;
+}
+html{
+    scroll-behavior: smooth;
+}
+body.bodytest.active{
+    background-color: #fff;
+}
+nav{
+    position: fixed ;
+    z-index: 999;
+    width: 100%;
+}
+div.logo{
+    display: flex;
+    background-color: rgba(255, 255, 255, 0.021);
+    backdrop-filter: blur(20px);
+    padding: 10px;
+}
+div.boxLeft{
+    width: 50%;
+
+}
+div.boxLeft .name1{
+    color: red;
+}
+div.boxRight{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+div.boxRight ul li a:hover{
+    color: red;
+    text-decoration: none; /* remove default underline */
+    border-bottom: 2px solid red;
+    padding-bottom: 5px; /* controls space between text and underline */
+    line-height: 50px;
+}
+div.boxLeft img{
+    width: 80px;
+    height: auto;
+    border-radius: 70%;
+}
+div.boxLeft span{
+    display: flex;
+    gap: 15px;
+    flex-direction: row;
+    align-items: center;
+    font-size: 32px;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    color: yellowgreen;
+    text-shadow: 5px 5px 8px black
+}
+div.boxRight ul{
+    display: flex;
+    flex-direction: row;
+    gap: 50px;
+    list-style-type: none;
+    justify-content: right;
+    align-items: center;
+    padding-right: 25px;
+    margin: 0px;
+
+}
+div.boxRight ul li a{
+    text-decoration: none;
+    font-size: 25px;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    color: yellowgreen;   
+}
+
+
+
+div.boxRight button{
+   font-size: 25px;
+   font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+   height: 60px;
+   border-radius: 40px 0px 40px 0px;
+   border-color: yellowgreen;
+   padding:  10px 50px 10px 50px;
+   margin-right: 10px;
+   background-color: black;
+   color: yellowgreen;
+}
+div.headerButton{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    position: relative;
+}
+section.heroBanner{
+    display: flex;
+    flex-direction: row;
+    margin: 0 auto;
+    height: 100vh;
+    width: 90%;
+ 
+
+}
+section.heroBanner .heroLeft{
+    width: 50%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+div.heroLeft .text-1{
+    width: 55%;
+    color: white;
+    font-size: 50px;
+}
+div.heroLeft .text-2{
+    width: 55%;
+    color: yellowgreen;
+    font-size: 80px;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+div.heroLeft .text-3{
+    width: 55%;
+    color: red;
+    font-size: 50px;
+
+}
+
+section.heroBanner .heroRight{
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 40px;
+    padding-bottom: 40px;
+}
+section.heroBanner .heroRight img{
+    width: 75%;
+    height: 75%;
+    border-radius: 70%;
+    background-color: yellowgreen;
+    padding: 15px;
+}
+section.AboutBanner{
+    background-color: white;
+    display: block;
+    flex-direction: column;
+    justify-content: center;
+    padding: 30px;
+
+   
+}
+section.AboutBanner .aboutHead {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    text-decoration: underline;
+    color: yellowgreen;
+    font-size: 30px;
+}
+section.AboutBanner .aboutLeft{
+    width: 50%;
+}
+section.AboutBanner .aboutLeft img{
+    width: 65%;
+    border-radius: 35%;
+}
+section.AboutBanner .AboutRight{
+    width: 50%;
+  
+    
+}
+section.AboutBanner .AboutBottom{
+    display: flex;
+    width: 60%;
+    margin: 0 auto;
+}
+div.AboutBottom  .AboutRight p{
+    width: 100%;
+    font-size: 20px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    line-height: 1.5em;
+    
+}
+div.AboutBottom  .AboutRight h3{
+    font-size: 25px;
+    color: red;
+}
+section.serviceBanner{
+    width: 100%;
+    color: white;
+    
+}
+section.serviceBanner .serviceHead{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    font-size: 35px;
+    color: yellowgreen;
+    text-decoration: underline;
+ }
+div.serviceMain .box{
+    width: 30%;
+    height: auto;
+    font-size: 30px;
+    
+}
+section.serviceBanner .serviceMain{
+    background-color: black;
+    width: 65%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 25px;
+    margin: 0 auto;
+    padding: 80px;
+}
+
+#box1{
+    background-color: rgba(128, 128, 128, 0.356);
+    border-radius: 15px;
+    padding: 10px;
+    text-align: center;
+}
+#box1:hover{
+     background-color: yellowgreen;
+}
+#box2{
+    background-color: rgba(128, 128, 128, 0.356);
+    border-radius: 15px;
+    padding: 10px;
+    text-align: center;
+    
+}
+#box2:hover{
+     background-color: yellowgreen;
+}
+#box3{
+    height: 92%;
+    background-color: rgba(128, 128, 128, 0.356);
+    border-radius: 15px;
+    padding: 10px;
+    text-align: center;
+    
+}
+#box3 h4{
+    display: flex;
+    align-items: center;
+}
+#box3 p{
+    display: flex;
+    align-items: right;
+}
+#box3:hover{
+     background-color: yellowgreen;
+}
+.box h4{
+    font-size: 40px;
+}
+.box p{
+    font-size: 30px;
+}
+
+section.skillsBanner{
+    color: black ;
+    background-color: white;
+    padding: 50px;
+}
+section.skillsBanner .skillsTitle{
+    display: flex;
+    justify-content: center;
+    font-size: 40px;
+    text-decoration: underline;
+}
+section.skillsBanner .container{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+    margin: 0 auto;
+    width: 90%;
+
+}
+div.skills2{
+    width: 40%;
+    font-size: 24px;
+}
+.skills h3{
+    font-weight: 400;
+    letter-spacing: 1px;
+    margin-top: 40px;
+    margin-bottom: 5px;
+    color: black;
+    font-size: 16px;
+}
+.progress-bar{
+    background: #959595;
+    width: 600px;
+    height: 10px;
+    border-radius: 5px;
+
+}
+.progress-bar div{
+    height: 10px;
+    border-radius: 5px;
+    border: 2px solid black;
+    width: 80%;
+    background: yellowgreen;
+}
+.progress-bar .css {
+    background-color: red;
+}
+.progress-bar .javascript {
+    background-color:  aqua;
+}
+.progress-bar .wordpress {
+    background-color: violet;
+}
+div.skills2{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+div.mainSkills p{
+    font-size: 25px;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+
+}
+.progress-bar div span{
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+    background: rgba(0, 0, 0, 0.74);
+    float: right;
+    margin-top: -15px;
+    margin-right: -20px;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.progress-bar .html{
+    width: 86%;
+}
+.progress-bar .css{
+    width: 80%;
+}
+.progress-bar .javascript{
+    width: 80%;
+}
+.progress-bar .wordpress{
+    width: 90%;
+}
+
+section.projectBanner{
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+div.projectTitle{
+    color: white;
+    font-size: 32px;
+    display: flex;
+    justify-content: center;
+    padding: 20px
+    
+}
+div.boxCard img{
+    width: 450px;
+    border: 5px solid yellowgreen;
+    border-radius: 15px;
+}
+div.boxCard p{
+    color: white;
+    font-size: 22px;
+}
+div.card .boxCard{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    padding: 50px;
+}
+div.card{
+    margin: 100px;
+    display: flex;
+    justify-content: center;
+    background-color: rgba(255, 255, 255, 0.041);
+    backdrop-filter: blur(30px);
+}
+div.card:hover{
+    background-color: yellowgreen;
+}
+section.contactBanner{
+    color: white;
+    background-color: rgba(0, 255, 255, 0.096);
+    
+}
+
+div.contactMain{
+    width: 100%;
+    height: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 80px;
+
+}
+form{
+    width: 90%;
+    max-width: 600px;
+    margin: 0 auto;
+}
+form h2{
+    font-size: 50px;
+    text-align: center;
+    padding: 20px;
+    color: yellowgreen;
+    text-decoration: underline;
+}
+.input-group{
+    margin-bottom: 30px;
+    position: relative;
+
+}
+input, textarea{
+    width: 100%;
+    padding: 10px;
+    outline: 0;
+    border: 1px solid #fff;
+    color: #ffffffe3;
+    background: transparent;
+    font-size: 15px;
+}
+label{
+    height: 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+    padding: 10px;
+    color: #fff;
+    cursor: text;
+}
+button{
+    padding: 10px 0;
+    color: #fff;
+    outline: none;
+    background: transparent;
+    border: 1px solid #fff;
+    width: 100%;
+    cursor: pointer;
+    
+}
+div.personalInfo{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-left: 20px;
+ 
+}
+
+div.personalInfo span{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    font-size: 20px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+div.personalInfo img{
+    width: 150px;
+}
+div.personalInfo i{
+    color: yellowgreen;
+    padding-right: 20px;
+}
+div.innerMain{
+    display: flex;
+    flex-direction: row;
+    width: 90%;
+    margin: 0 auto;
+}
+footer{
+    color: white;
+    font-size: 25px;
+    margin: 0px;
+}
+div.footerBanner{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    padding: 0px;
+    margin-bottom: 10px;
+} 
+div.footerBanner p{
+    margin-bottom: 10px;
+}
+.mobileSection {
+    display: none;
+}
+.mobileSection.active {
+    display: block;
+}
+section.pop-up {
+    color: white;
+    position: absolute;
+    display: none;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+section.pop-up .pop-upForm p{
+    color: yellowgreen;
+}
+section.pop-up .pop-upForm{
+    background-color: white;
+   
+}
+section.pop-up.active{
+    display: flex;
+}
+
+@media only screen and (max-width: 768px){
+    div.boxLeft .name1{
+    color: blue;
+
+}
+    nav{
+        display: none;
+    }
+    section.skillsBanner .container {
+        display: block;
+    }
+    section.heroBanner{
+        display: block;
+        height: 100vh;
+        padding-top: 20px;
+    }
+    section.heroBanner .heroLeft{
+        width: 100%;
+    }
+    div.heroLeft .text-1{
+        text-align: center;
+        padding-top: 10px;
+    }
+    div.heroLeft .text-2{
+        width: 100%;
+        text-align: center;
+    }
+    div.heroLeft .text-3{
+        width: 100%;
+        text-align: center;
+    }
+    section.heroBanner .heroRight{
+        width: 100%;
+    }
+    section.AboutBanner .AboutBottom{
+        display: block;
+    }
+    section.AboutBanner .aboutLeft {
+         width: 100%;
+         display: flex;
+        justify-content: center;
+    }
+    div.AboutBottom .AboutRight h3 {
+        text-align: center;
+    }
+    section.AboutBanner .AboutRight{
+        width: 100%;
+    }
+    section.serviceBanner .serviceMain{
+        width: 100%;
+        display: block;
+    }
+    div.serviceMain .box{
+        width: 100%;
+        padding: 10px;
+    }
+    div.skills2 {
+        width: 100%;
+    }
+    
+}
+@media only screen and (max-width: 425px){
+    div.boxLeft .name1{
+    color: green;
+}
+.progress-bar{
+    width: auto;
+}
+div.personalInfo{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+section.AboutBanner .aboutLeft img{
+    width: 70%;
+}
+section.heroBanner .heroRight img{
+    width: 70%;
+}
+ section.heroBanner{
+    height: 70vh;
+ }
+
+div.heroLeft .text-1{
+    width: 100%;
+    text-align: center;
+    padding-top: 10px;
+    font-size: 25px;
+}
+    div.heroLeft .text-2 {
+    font-size: 45px;
+    }
+    div.heroLeft .text-3{
+    font-size: 35px;    
+}
+section.skillsBanner .skillsTitle{
+    font-size: 30px;
+}
+footer{
+    font-size: 15px;
+}
+box h4{
+    font-size: 15px;
+}
+div.boxCard img{
+    width: 200px;
+}
+div.boxCard p{
+    text-align: center;
+}
+p{
+    font-size: 18px;
+}
+div.AboutBottom .AboutRight p{
+    font-size: 10px;
+    line-height: 1.5em;
+}
+div.serviceMain .box{
+            font-size: 100px;
+    }
+.box h4{
+    font-size: 25px;
+}
+.box p {
+    font-size: 15px;
+}
+div.footerBanner p{
+    font-size: 15px;
+}
+div.AboutBottom .AboutRight h3{
+    font-size: 20px;
+}
+div.innerMain{
+    flex-direction: column;
+}
+div.personalInfo {
+    margin: 0px;
+}
+section.headerMobile .headerMobilemain{
+    color: yellowgreen;
+    display: flex;
+    justify-content: space-between;
+    width: 90%;
+    margin: 0 auto;
+    font-size: 25px;
+   
+    
+}
+section.headerMobile .headerMobileleft{
+    display: flex;
+    gap: 5px;
+
+    
+}
+div.headerMobileleft .header-color{
+    color: red;
+    
+}
+div.headerMobileRight {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+section.headerMobile .headerMobileleft p{
+    font-size: 25px;
+}
+ul{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    color: white;
+    list-style-type: none;
+    font-size: 32px;
+}
+ul li a{
+    text-decoration: none;
+    color: white;
+}
+}
+
+
